@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="10" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jeu.Controller">
+    <children>
+        <Label text="Nom du joueur :" />
+        <TextField fx:id="playerNameField" />
+        <Button text="Ajouter joueur" onAction="#ajouterJoueur"/>
+        <Label text="Sélectionner un joueur à enlever :" />
+        <ComboBox fx:id="playerComboBox" />
+        <Button text="Enlever joueur" onAction="#enleverJoueur"/>
+        <Label fx:id="currentPlayerLabel" text="Joueur actuel : "/>
+        <Label fx:id="resultLabel" text="Résultat des dés"/>
+        <Label fx:id="pointsLabel" text="Points : 0"/>
+        <Button text="Lancer les dés" onAction="#lancerDes"/>
+        <Button text="Rejouer" onAction="#rejouer"/>
+    </children>
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+</VBox>

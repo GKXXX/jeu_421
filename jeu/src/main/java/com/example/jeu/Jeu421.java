@@ -21,13 +21,13 @@ public class Jeu421 {
     }
 
     private void relancerDes() {
-        if (de1.getValeur() == 6) {
+        while (de1.getValeur() == 6) {
             de1.lancer();
         }
-        if (de2.getValeur() == 6) {
+        while (de2.getValeur() == 6) {
             de2.lancer();
         }
-        if (de3.getValeur() == 6) {
+        while (de3.getValeur() == 6) {
             de3.lancer();
         }
     }
